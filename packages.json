@@ -38,5 +38,10 @@
     "version": "1.0",
     "description": "Lists all files inside current directory like a tree",
     "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/tree.py"
+  },
+  "logs": {
+    "version": "1.0",
+    "description": "Saves all entered commands as a log",
+    "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/logs.py"
   }
 }

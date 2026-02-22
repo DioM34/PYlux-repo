@@ -33,5 +33,10 @@
     "version": "1.0",
     "description": "A graphical user explorer for listing files",
     "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/explorer.py"
+  },
+  "tree": {
+    "version": "1.0",
+    "description": "Lists all files inside current directory like a tree",
+    "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/tree.py"
   }
 }

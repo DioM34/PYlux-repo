@@ -11,12 +11,17 @@
   },
   "calculator": {
     "version": "1.0",
-    "description": "Scientific math tool with interactive mode",
+    "description": "Scientific math tool",
     "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/calculator.py"
   },
   "clock": {
     "version": "1.0",
-    "description": "Big ASCII digital clock with live mode",
+    "description": "Big ASCII digital clock",
     "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/clock.py"
+  },
+  "notes": {
+    "version": "1.0",
+    "description": "Simple text-based note manager",
+    "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/notes.py"
   }
 }

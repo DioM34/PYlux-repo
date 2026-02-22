@@ -43,5 +43,10 @@
     "version": "1.0",
     "description": "Saves all entered commands as a log",
     "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/logs.py"
+  },
+  "snake": {
+    "version": "1.0",
+    "description": "The small well known snakes game",
+    "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/snake.py"
   }
 }

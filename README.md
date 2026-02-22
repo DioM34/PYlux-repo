@@ -9,6 +9,8 @@ Features:
 * resource saving - using this is much more resourcesaving than running an real vm
 * listening to community - i listen to community requests or ideas
 
+if you like this project id be happy if you starred this project it would motivate me to keep going and continue updating this :^)
+
   if you have suggestions, reports or bugs you can open a pull request and i will be taking a look at it :^)
 
   **DISCLAIMER**: this project was made 100% vibecoding using ai like Gemini or ChatGPT if you encounter any issues or bugs as i said open a pull request or an issue

@@ -1,18 +1,12 @@
 {
   "weather": {
-    "1.0": {
-      "description": "Live weather reports from wttr.in",
-      "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/weather_v1.py"
-    },
-    "1.1": {
-      "description": "Weather tool with improved formatting",
-      "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/weather.py"
-    }
+    "version": "1.1",
+    "description": "Live weather reports from wttr.in",
+    "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/weather.py"
   },
   "neofetch": {
-    "1.0": {
-      "description": "Professional System Information Tool",
-      "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/neofetch.py"
-    }
+    "version": "1.0",
+    "description": "Professional System Information Tool",
+    "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/neofetch.py"
   }
 }

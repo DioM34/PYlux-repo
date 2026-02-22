@@ -73,5 +73,10 @@
     "version": "1.0",
     "description": "Allows you to download videos / sounds from youtube",
     "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/pydownloader.py"
+  },
+  "pychat": {
+    "version": "1.0",
+    "description": "An open working chat for all PYluxOS users",
+    "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/pychat.py"
   }
 }

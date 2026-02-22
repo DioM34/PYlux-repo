@@ -1,5 +1,6 @@
 # PYluxOS
-this is a python made sandbox (fake) linux 
+this is a python made sandbox (fake) linux
+which is 100% open source and free for everyone
 
 Features:
 * the 'py' package manager - it uses the packages found in the /packages folder on this github repo

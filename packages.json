@@ -1,6 +1,6 @@
 {
   "weather": {
-    "version": "1.2",
+    "version": "1.1",
     "description": "Live weather reports from wttr.in",
     "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/weather.py"
   },

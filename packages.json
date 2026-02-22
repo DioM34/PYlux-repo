@@ -1,7 +1,12 @@
 {
   "neofetch": {
     "version": "1.0",
-    "description": "System Information Tool",
-    "url": "https://raw.githubusercontent.com/DioM34/pylux-repo/main/packages/neofetch.py"
+    "description": "System Info Tool",
+    "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/neofetch.py"
+  },
+  "weather": {
+    "version": "1.0",
+    "description": "Live weather reports from wttr.in",
+    "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/weather.py"
   }
 }

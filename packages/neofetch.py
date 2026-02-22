@@ -18,6 +18,9 @@ def run(args, current_dir, username, start_time, is_sudo=False):
 
     # 2. Gather System Info
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    # Count installed binary commands
+    bin_count = len([f for f in os.listdir("bin") if f.endswith(".py")]) if os.path.exists("bin") else 0
 
     file_count = 0
     total_size = 0
@@ -32,31 +35,34 @@ def run(args, current_dir, username, start_time, is_sudo=False):
 
     # 3. Requested Python ASCII Logo
     logo_lines = [
-        "       ⢀⣤⣴⣶⣶⣶⣶⣶⣦⣄         ",
-        "      ⢀⣾⠟⠛⢿⣿⣿⣿⣿⣿⣿⣷       ",
-        "      ⢸⣿⣄⣀⣼⣿⣿⣿⣿⣿⣿⣿⠀⢀⣀⣀⣀⡀  ",
-        "      ⠈⠉⠉⠉⠉⠉⠉⣿⣿⣿⣿⣿⠀⢸⣿⣿⣿⣿⣦ ",
+          "       ⢀⣤⣴⣶⣶⣶⣶⣦⣄         ",
+         "      ⢀⣾⠟⠛⢿⣿⣿⣿⣿⣿⣿⣷       ",
+        "       ⢸⣿⣄⣀⣼⣿⣿⣿⣿⣿⣿⣿⠀⢀⣀⣀⣀⡀  ",
+        "       ⠈⠉⠉⠉⠉⠉⠉⣿⣿⣿⣿⣿⠀⢸⣿⣿⣿⣿⣦ ",
         " ⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⢸⣿⣿⣿⣿⣿⡇",
         "⢰⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⠿⠿⠿⠿⠋⠀⣼⣿⣿⣿⣿⣿⡇",
         "⢸⣿⣿⣿⣿⣿⡿⠉⢀⣠⣤⣤⣤⣤⣤⣤⣤⣴⣾⣿⣿⣿⣿⣿⣿⡇",
         "⢸⣿⣿⣿⣿⣿⡇⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿ ",
         "⠘⣿⣿⣿⣿⣿⡇⠀⣿⣿⣿⣿⣿⠛⠛⠛⠛⠛⠛⠛⠛⠛⠋⠁  ",
         " ⠈⠛⠻⠿⠿⠇⠀⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⡇      ",
-        "        ⣿⣿⣿⣿⣿⣿⣿⣧⣀⣀⣿⠇     ",
-        "        ⠘⢿⣿⣿⣿⣿⣿⣿⣿⡿⠋      "
+        "          ⣿⣿⣿⣿⣿⣿⣿⣧⣀⣀⣿⠇     ",
+        "          ⠘⢿⣿⣿⣿⣿⣿⣿⣿⡿⠋      "
     ]
 
-    # 4. System Info Data (Purple labels, White values)
+    # 4. System Info Data (Expanded Information)
     info_lines = [
         f"{PURPLE}{username}{WHITE}@{PURPLE}PYlux",
         f"{WHITE}-----------------------",
         f"{PURPLE}OS: {WHITE}PYlux OS 1.4.2",
         f"{PURPLE}Kernel: {WHITE}Python {platform.python_version()}",
         f"{PURPLE}Uptime: {WHITE}{uptime_str}",
-        f"{PURPLE}Packages: {WHITE}{file_count} (files)",
-        f"{PURPLE}Memory: {WHITE}{kb_size} KB (virtual)",
-        f"{PURPLE}Host: {WHITE}{platform.system()}",
-        f"{PURPLE}Root: {WHITE}/{current_dir}",
+        f"{PURPLE}Shell: {WHITE}PYlux Shell (main.py)",
+        f"{PURPLE}Resolution: {WHITE}{os.get_terminal_size().columns}x{os.get_terminal_size().lines}",
+        f"{PURPLE}Total Files: {WHITE}{file_count}",
+        f"{PURPLE}Binaries: {WHITE}{bin_count} commands",
+        f"{PURPLE}System Size: {WHITE}{kb_size} KB",
+        f"{PURPLE}Privileges: {WHITE}{'Root (sudo)' if is_sudo else 'User'}",
+        f"{PURPLE}Current Path: {WHITE}/{current_dir}",
         f"{PURPLE}Local Time: {WHITE}{current_time}"
     ]
 
@@ -66,7 +72,6 @@ def run(args, current_dir, username, start_time, is_sudo=False):
     for i in range(max_lines):
         logo_part = logo_lines[i] if i < len(logo_lines) else "                                        "
         info_part = info_lines[i] if i < len(info_lines) else ""
-        # Adjusting space to account for wide-character ASCII
         print(f" {logo_part}   {info_part}")
 
     # 6. Color Palette

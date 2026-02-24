@@ -29,8 +29,9 @@ PYlux mimics a standard Unix-like hierarchy to keep system files and user script
 * **`/bin`**: Contains all core system commands and binaries.
 * **`/core`**: The "heart" of the system. Contains boot files, login logic, and user creation scripts.
 * **`/packages`**: The landing zone for all external tools installed via the `py` manager.
+* **`/boot`**: The directory for the bootmessages and the logo
 * **`motd.txt`**: Edit this file to change the ASCII logo and welcome message shown at boot.
-
+* 
 ---
 
 ## ⌨️ Core Commands

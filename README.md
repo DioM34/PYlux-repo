@@ -2,7 +2,8 @@
 
 **PYlux** is a Python-based sandbox environment that simulates a Linux-like experience. It is 100% open-source, lightweight, and free for everyone.
 
-<img src="https://via.placeholder.com/800x400.png?text=PYlux+Terminal+Preview" alt="PYlux Terminal Preview" width="100%">
+<img width="1279" height="719" alt="pylux-image" src="https://github.com/user-attachments/assets/322e1787-38e1-423b-b912-5ac9e7781072" />
+
 
 > [!IMPORTANT]
 > **DISCLAIMER:** This project was developed through "vibecoding" using AI tools like Gemini and ChatGPT. If you encounter bugs, please contribute by opening an issue or a pull request!
@@ -92,4 +93,4 @@ Bugs: Report issues via the GitHub Issues tab.
 
 Feedback: I actively listen to community requests!
 
-Made with ❤️ and AI.
+Made with AI and ❤️.

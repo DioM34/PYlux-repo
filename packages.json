@@ -70,7 +70,7 @@
     "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/pytrix.py"
   },
   "pydownloader": {
-    "version": "1.1",
+    "version": "1.2",
     "description": "Allows you to download videos / sounds from youtube",
     "url": "https://raw.githubusercontent.com/DioM34/PYlux-repo/main/packages/pydownloader.py"
   },
